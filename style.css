@@ -235,17 +235,12 @@ body
     width: 100%;
 }
 
+/* Footer layout */
 .footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 80px;
-    color: #fff;
-    font-family: 'Trebuchet MS', sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .aimg {
@@ -286,6 +281,7 @@ body
     font-size: 14px;
     color: #0a0a0a;
 }
+
 
 /*------------------------------------------------MAIN_ABOUT----------------------------------------*/
 .main_about
