@@ -1,416 +1,284 @@
-body
-{
-    background-color: black;
+/* General Styles */
+body {
+    background-color: #000;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-/*------------------------------------------------NAVBAR----------------------------------------*/
+
+/*-------------------- NAVBAR --------------------*/
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
-  background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
 }
-
-
 
 .nav_side {
     display: flex;
-    gap: 40px;
-    align-items: center;
-    margin-left: auto; /* pushes nav items to the right */
+    gap: 30px;
 }
 
 .nav_side a {
+    color: #000;
     text-decoration: none;
-    color: black;
     font-weight: bold;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-    transition: color 0.3s ease;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 .nav_side a:hover {
     color: #fabd00;
 }
 
-/*------------------------------------------------MAIN----------------------------------------*/
+/*-------------------- MAIN SECTION --------------------*/
 .main {
-  background-image: url("https://inastabazah.github.io/True-Game-Changers/Header image.jpeg");
-    background-position: center;
-    background-size: 100% auto; /* full width, auto height */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh; /* increase this to make it higher */
-}
-.main .main_content
-{
-    padding-top: 11%;
-    margin-left: 10%;
-    margin-right: 10%;
-    width:40%;
-}
-.main .main_content h2
-{
-    color: white;
-    font-size: 350%;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
-    text-align: left;
-}
-.main .main_content h2 span
-{
-    font-size:50%;
-    opacity: 0.9;
-    font-weight: 400;
-    line-height: 50px;
-}
-.main .main_content .btn
-{
-    margin-top:10%;
-    text-align: left;
-    width:0%;
-}
-.main .main_content .btn a
-{
-    text-decoration: none;
-    font-size: large;
-    margin:44%;
-    padding: 10px 20px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.856);
-    color:white;
-    font-family: 'Trebuchet MS', sans-serif; 
-    text-align: center;
-    border: 2px solid rgba(255, 255, 255, 0.527);
-    transition: 0.5s;
-}
-.main .main_content .btn a:hover
-{
-    background-color: rgba(255, 255, 255, 0.527);
-    color: rgb(37, 0, 19);
-    border: none;
-    border: 4px solid rgb(37, 0, 19);
-    transition:0.5s;
-}
-/*------------------------------------------------SIDE----------------------------------------*/
-.side {
-    background-color: rgba(0, 0, 0, 0.966);
-    display: flex;
-    text-align: center;
-    color: white;
-    font-family: 'Trebuchet MS', sans-serif;
-}
-.side .left {
-    width: 65%; /* بدل 50% */
-    float: left;
+    background: url('https://inastabazah.github.io/True-Game-Changers/Header%20image.jpeg') center/cover no-repeat fixed;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    justify-content: flex-start;
+    padding: 0 10%;
 }
+
+.main_content {
+    width: 40%;
+    color: #fff;
+}
+
+.main_content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.main_content h2 span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.main_content .btn a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.main_content .btn a:hover {
+    background: #fff;
+    color: #250013;
+    border: 2px solid #250013;
+}
+
+/*-------------------- SIDE SECTION --------------------*/
+.side {
+    display: flex;
+    background: rgba(0, 0, 0, 0.95);
+    color: #fff;
+}
+
+.side .left, .side .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
 .side .left video {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    border-radius: 10px;
 }
-.side .right {
-    background-color: rgba(0, 0, 0, 0.966);
-    width: 35%; /* بدل 50% */
-    float: right;
-}
+
 .side .right h2 {
-    margin-top: 8%;
-    font-size: 220%; /* ممكن تصغره شوي حسب المساحة */
+    font-size: 2.5rem;
 }
+
 .side .right p {
-    margin-left: 10%;
-    width: 80%;
-    font-size: 130%;
-    margin-top: 6%;
+    margin: 20px 0;
+    font-size: 1.2rem;
 }
-.side .right .side_btn {
-    margin-top: 4%;
-}
-.side .right .side_btn a {
-    text-decoration: none;
-    font-size: large;
-    margin: 32%;
+
+.side_btn a {
+    display: inline-block;
     padding: 10px 20px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Trebuchet MS', sans-serif;
-    text-align: center;
-    border: 4px double whitesmoke;
+    color: #fff;
+    border: 2px double #fff;
+    text-decoration: none;
     transition: 0.5s;
 }
-.side .right .side_btn a:hover {
-    background-color: #fabd00;
-    color: black;
+
+.side_btn a:hover {
+    background: #fabd00;
+    color: #000;
     font-weight: bolder;
-    border: none;
-    border: 4px solid green;
-    transition: 0.5s;
 }
 
-
-/*--------------------------------------------HOW WE HELP----------------------------------------*/
+/*-------------------- PRODUCT SECTION --------------------*/
 .product {
-    background-image: url("images/poor.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 50px 0;
+    background: url('images/poor.jpg') center/cover no-repeat fixed;
+    padding: 60px 5%;
     min-height: 100vh;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: white;
+    color: #fff;
+    text-align: center;
 }
 
 .product h2 {
-    font-size: 45px;
-    text-align: center;
-    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
 }
 
-.product .product_container {
+.product_container {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 30px;
-    margin: 0 5%;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.product .item {
-    background-color: #deddd9;
-    opacity: 0.9;
+.item {
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
-    width: 30%;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
     color: #000;
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
 }
 
-.product .item:hover {
-    box-shadow: 0px 5px 25px rgb(255, 189, 165);
+.item:hover {
+    box-shadow: 0 5px 25px #ffbda5;
 }
 
-.product .item_img {
+.item_img img {
     width: 120px;
     height: 120px;
-    overflow: hidden;
+    object-fit: cover;
     border-radius: 50%;
     margin-bottom: 15px;
 }
 
-.product .item_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.product .item_content {
-    text-align: center;
-}
-
-.product .item_content h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
+.item_content h3 {
     color: #fabd00;
 }
 
-.product .item_content p {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-/*--------------------------------------------FOOTER----------------------------------------*/
+/*-------------------- FOOTER --------------------*/
 .footer-wrapper {
-    background-color: #000;
-    width: 100%;
+    background: #000;
+    padding: 40px 20px;
 }
 
-/* Footer layout */
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-.logo img, .footer-content img {
-  max-width: 100%;
-  height: auto;
-}
-.aimg {
-    width: 200px;
-    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
 }
 
 .footer-text {
     max-width: 600px;
     text-align: center;
-}
-
-.footer-text p {
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-.social-icons {
-    margin-top: 20px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .social-icons a {
     color: #fabd00;
     margin: 0 10px;
     font-size: 24px;
-    transition: color 0.3s ease;
+    transition: 0.3s;
 }
 
 .social-icons a:hover {
     color: #fff;
 }
 
-/* New CSS for All Rights Reserved Section */
 .footer-content-rights {
     text-align: center;
     margin-top: 20px;
-    font-size: 14px;
-    color: #0a0a0a;
+    font-size: 0.9rem;
+    color: #ccc;
 }
 
-
-/*------------------------------------------------MAIN_ABOUT----------------------------------------*/
-.main_about
-{
-    font-family: 'Trebuchet MS', sans-serif;
-    background-image: url("images/about.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/*-------------------- ABOUT PAGE --------------------*/
+.main_about {
+    background: url('images/about.jpg') center/cover no-repeat fixed;
     height: 80vh;
-    margin-top:-1.5%;
-}
-.main_about .main_content_about h2
-{
-    color: white;
-    font-size: 390%;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding:20%;
 }
-.product_about
-{
-    float:left;
-    background-image: url("images/about_back.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding-bottom: 50px;
+
+.main_about h2 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+/*-------------------- DONATE PAGE --------------------*/
+.donate {
+    background: url('images/donate_back.jpg') center/cover no-repeat fixed;
     height: 100vh;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/*--------------------------------------------DONATE----------------------------------------*/
-.donate
-{
-    font-family: 'Trebuchet MS', sans-serif;
-    background-image: url("images/donate_back.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    margin-top:-1.5%;
-    color: white;
+
+.donate_container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
     text-align: center;
+    border-radius: 10px;
+    color: #fff;
 }
-.donate .donate_container
-{
-    background-color: black;
-    opacity:80%;
-    text-align: center;
-    margin: 0% 20% 0% 20%;
-    padding-top:10%;
-    padding-bottom: 10%;
+
+.donate_container h1 {
+    color: #fabd00;
+    margin-bottom: 20px;
 }
-.donate .donate_container h1
-{
-    color:#fabd00;
-    line-height: 100px;
+
+.donate_container p {
+    margin: 20px 0;
 }
-.donate .donate_container p
-{
-    font-size: large;
-    width:80%;
-    text-align: center;
-    padding-left:20%;
-}
-.donate .donate_container .second
-{
-    padding-bottom: 10%;
-}
-.donate .side_btn a
-{
-    text-decoration: none;
-    font-size: 120%;
+
+.donate .side_btn a {
+    display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Trebuchet MS', sans-serif;
-    border: 2px double whitesmoke;
+    border: 2px double #fff;
+    color: #fff;
     transition: 0.5s;
 }
-.donate .side_btn a:hover
-{
-    background-color: white;
-    color: black;
-    font-weight:bolder;
-    border: none;
-    border: 4px solid #fabd00;
-    transition:0.5s;
+
+.donate .side_btn a:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #fabd00;
 }
-/*--------------------------------------------CONTACT---------------------------------------*/
-.contact_container
-{
-    padding: 100px;
-    font-family: 'Trebuchet MS', sans-serif;
-    background-image: url("images/about_back.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 180vh;
-    margin-top:-1.5%;
-    color: white;
-}
-.contact_container h2
-{
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    font-size: 33px;
+
+/*-------------------- CONTACT PAGE --------------------*/
+.contact_container {
+    background: url('images/about_back.jpg') center/cover no-repeat fixed;
+    padding: 80px 20px;
     text-align: center;
-    font-family: 'Trebuchet MS', sans-serif;
+    color: #fff;
 }
-.contact_container .g_map
-{
-    border:10px solid white;
+
+.contact_container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
-.contact_container .contact_content
-{
-    padding:20px;
-    font-family: 'Trebuchet MS', sans-serif;
+
+.g_map {
+    margin: 30px auto;
+    max-width: 100%;
+    border: 10px solid #fff;
 }
-.contact_container .contact_content p
-{
-    padding:15px;
-    font-size: 20px;
-    line-height: 25px;
+
+.contact_content p {
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
-/*--------------------------------------------CATERING---------------------------------------*/
