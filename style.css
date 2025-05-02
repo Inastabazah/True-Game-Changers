@@ -11,9 +11,7 @@ body
   background-color: #fff;
 }
 
-.logo img {
-    width: 100px;
-}
+
 
 .nav_side {
     display: flex;
@@ -242,7 +240,10 @@ body
   align-items: center;
   padding: 20px;
 }
-
+.logo img, .footer-content img {
+  max-width: 100%;
+  height: auto;
+}
 .aimg {
     width: 200px;
     height: auto;
