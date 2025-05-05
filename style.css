@@ -4,14 +4,22 @@ body
 }
 /*------------------------------------------------NAVBAR----------------------------------------*/
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
-  background-color: #fff;
+    background-color: #deddd9;
+    z-index: 9;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between; /* spreads logo and nav items */
+    align-items: center;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.856);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-
+.logo img {
+    width: 100px;
+}
 
 .nav_side {
     display: flex;
@@ -35,7 +43,7 @@ body
 
 /*------------------------------------------------MAIN----------------------------------------*/
 .main {
-  background-image: url("https://inastabazah.github.io/True-Game-Changers/Header image.jpeg");
+    background-image: url("Images/WhatsApp\ Image\ 2025-04-30\ at\ 5.56.31\ PM.jpeg");
     background-position: center;
     background-size: 100% auto; /* full width, auto height */
     background-repeat: no-repeat;
@@ -233,17 +241,19 @@ body
     width: 100%;
 }
 
-/* Footer layout */
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+    color: #fff;
+    font-family: 'Trebuchet MS', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    box-sizing: border-box;
 }
-.logo img, .footer-content img {
-  max-width: 100%;
-  height: auto;
-}
+
 .aimg {
     width: 200px;
     height: auto;
@@ -282,7 +292,6 @@ body
     font-size: 14px;
     color: #0a0a0a;
 }
-
 
 /*------------------------------------------------MAIN_ABOUT----------------------------------------*/
 .main_about
@@ -413,4 +422,4 @@ body
     font-size: 20px;
     line-height: 25px;
 }
-/*--------------------------------------------CATERING---------------------------------------*/
+/*--------------------------------------------CATERING---------------------------------------*/ 
